@@ -17,7 +17,7 @@
 	//No need for hardcoded user here - have that in the database directly, and just type that into frontend like any credential
 
 	// SQL Query 
-	$sql = "SELECT * FROM USERLOG WHERE USER='$user' AND PASSWORD='$pw_hashed'";
+	$sql = "SELECT * FROM USERLOG WHERE USER='$user' AND PASS='$pw_hashed'";
 	// SQL Query Results
 	$result = $conn->query($sql);
 
